@@ -10,10 +10,12 @@ export default function PostPage({
   content,
 }) {
   return (
-    <>
-      <Link href='/'>
-        <a className='btn btn-back'>Go Back</a>
-      </Link>
+    <div style={{ padding: "32px 0px" }}>
+      <div style={{ position: "fixed", bottom: "64px", right: "64px" }}>
+        <Link href='/'>
+          <a className='btn btn-back'>主页</a>
+        </Link>
+      </div>
       <div className='card card-page'>
         <h1 className='post-title'>{title}</h1>
         <div className='post-date'>Posted on {date}</div>
@@ -22,7 +24,7 @@ export default function PostPage({
           <div dangerouslySetInnerHTML={{ __html: marked(content) }}></div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

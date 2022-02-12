@@ -26,14 +26,14 @@ img {
 }
 
 header {
-  background: steelblue;
-  color: #fff;
-  padding: 5px;
-  margin-bottom: 40px;
+  background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4); 
+  color: #ffffff;
+  padding: 24px;
 }
 
 header a {
-  color: #fff;
+  color: #ffffff;
+  font-size: 32px;
 }
 
 .container {
@@ -74,7 +74,6 @@ header a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
-  margin-top: 30px;
 }
 
 .card {
